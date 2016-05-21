@@ -41,10 +41,10 @@ import javafx.stage.Stage;
  
 public class Scatterplot extends Application implements EventHandler<ActionEvent>{
 
-	int k;
-	boolean meansShown = false;
-	boolean firstClustered = false;
-	final Button initialize = new Button("Initialize");               
+    int k;
+    boolean meansShown = false;
+    boolean firstClustered = false;
+    final Button initialize = new Button("Initialize");               
     final Button next = new Button("Next");
     final Label meansLabel = new Label("K Value (2 to 5 inclusive)");
     //final TextField numMeans = new TextField("3");
@@ -236,9 +236,9 @@ public class Scatterplot extends Application implements EventHandler<ActionEvent
     		}
     		
     		/*System.out.println("Minimum distance point for  (" + point.getXValue() + "," + point.getYValue() + ")"
-													           + " is ("
-													           + minDistMean.getXValue() + "," + minDistMean.getYValue() + ")"
-													           + " at " + minDistance);
+								     + " is ("
+						                     + minDistMean.getXValue() + "," + minDistMean.getYValue() + ")"
+								     + " at " + minDistance);
     		*/
     		//System.out.println("Move this point to cluster " + (minIndex+1));
     		
@@ -270,9 +270,9 @@ public class Scatterplot extends Application implements EventHandler<ActionEvent
     	double distance = Math.sqrt(Math.pow(xDif,2) + Math.pow(yDif,2));
     	
     	/*System.out.println("Distance b/t (" + point.getXValue() + "," + point.getYValue() + ")"
-    										+ " and ("
-    										+ meanPoint.getXValue() + "," + meanPoint.getYValue() + ")"
-    										+ " is " + distance);
+    					      + " and ("
+    					      + meanPoint.getXValue() + "," + meanPoint.getYValue() + ")"
+    					      + " is " + distance);
     	*/
     	return distance;
     }
